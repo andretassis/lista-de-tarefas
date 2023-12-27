@@ -1,6 +1,11 @@
+import Header from '../components/Header/Header.jsx'
+
 const Tasks = () => {
     return (
-        <div>Tasks</div>
+        <>
+            <Header />
+            <div>Tasks</div>
+        </>
     )
 }
 

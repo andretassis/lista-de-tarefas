@@ -1,0 +1,28 @@
+@use '../../sass/variables' as *;
+
+.Header {
+    background-color: $blue;
+    padding: 30px 50px 0 50px;
+    font-size: 20px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        color: $white;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    li {
+        padding-bottom: 7px;
+    }
+
+    .header__tasks {
+        background-color: $white;
+        color: $blue;
+        padding: 0 30px;
+        border-radius: 10px 10px 0 0;
+        font-weight: 500;
+    }
+}
