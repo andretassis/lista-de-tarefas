@@ -1,0 +1,11 @@
+@use '../sass/variables' as *;
+
+.Tasks {
+    background-color: $dark-gray;
+    height: 100vh;
+    text-align: center;
+    color: $white;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 150px;
+}

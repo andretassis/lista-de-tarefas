@@ -1,10 +1,11 @@
 import Header from '../components/Header/Header.jsx'
+import "./Tasks.scss"
 
 const Tasks = () => {
     return (
         <>
             <Header />
-            <div>Tasks</div>
+            <section className="Tasks">Otimize seu tempo e se organize com o nosso Planejador Diário.</section>
         </>
     )
 }
