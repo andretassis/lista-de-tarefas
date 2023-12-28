@@ -11,14 +11,16 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Tasks />,
-  },
-  {
-    path: "/edit",
-    element: <Edit />,
-  },
-  {
-    path: "/delete",
-    element: <Delete />,
+    children: [
+      {
+        path: "edit",
+        element: <Edit />,
+      },
+      {
+        path: "delete",
+        element: <Delete />
+      }
+    ],
   },
 ]);
 
