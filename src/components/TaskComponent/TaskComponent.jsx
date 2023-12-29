@@ -33,7 +33,7 @@ const TaskComponent = () => {
                     </div>
                 </div>
                 <div className="task__container--new">
-                    <p><em>Nova tarefa...</em></p>
+                    <input type="text" placeholder='Nova tarefa...' />
                     <img src={more} alt="Mais" />
                 </div>
             </div>

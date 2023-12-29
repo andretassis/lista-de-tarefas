@@ -35,6 +35,24 @@
         background-color: red;
     }
 
+    input[type="text"] {
+        background-color: $dark-gray;
+        border: none;
+        font-size: 22px;
+        color: $white;
+        padding: 5px 8px;
+    }
+
+    input[type="text"]::placeholder {
+        color: $white;
+        font-style: italic;
+    }
+
+    input[type="text"]:focus {
+        border: none;
+        outline: none;
+    }
+
     .task__container {
         background-color: $dark-gray;
         color: $white;
