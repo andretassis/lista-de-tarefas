@@ -78,6 +78,11 @@
         display: flex;
         justify-content: space-between;
         margin: 15px 0;
+
+        p {
+            width: 150px;
+            text-align: justify;
+        }
     }
 
     .container--item--checked {

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const TaskComponent = () => {
+const TaskComponent = ({ data }) => {
     return (
         <section className="Task">
             <div className="task__container">
@@ -18,20 +18,27 @@ const TaskComponent = () => {
                     <p>Opções</p>
                 </div>
                 <hr></hr>
-                <div className="task__container--item">
-                    <p>Nome da tarefa</p>
 
-                    {/* NA HORA DE CLICAR NO CHECKBOX, TEM QUE TROCAR PARA A IMAGEM */}
+                {/* COMPONENTIZAR ISSO ???? */}
 
-                    {/* <img className="container--item--checked" src={checked} alt="Feito" /> */}
-                    <input type="checkbox" id="myCheckbox" />
-                    <label for="myCheckbox"></label>
+                {data.map((task) => (
 
-                    <div>
-                        <Link to="/edit"><img src={edit} alt="Editar" /></Link>
-                        <Link to="/delete"><img src={del} alt="Deletar" /></Link>
+                    <div className="task__container--item">
+                        <p>{task.title}</p>
+
+                        {/* NA HORA DE CLICAR NO CHECKBOX, TEM QUE TROCAR PARA A IMAGEM */}
+
+                        {/* <img className="container--item--checked" src={checked} alt="Feito" /> */}
+                        <input type="checkbox" id="myCheckbox" />
+                        <label for="myCheckbox"></label>
+
+                        <div>
+                            <Link to="/edit"><img src={edit} alt="Editar" /></Link>
+                            <Link to="/delete"><img src={del} alt="Deletar" /></Link>
+                        </div>
                     </div>
-                </div>
+                ))}
+
                 <div className="task__container--new">
                     <input type="text" placeholder='Nova tarefa...' />
                     <img src={more} alt="Mais" />
