@@ -6,6 +6,7 @@ import Tasks from './views/Tasks';
 import Edit from './components/Edit/Edit.jsx';
 import Delete from './components/Delete/Delete.jsx';
 import TaskComponent from './components/TaskComponent/TaskComponent.jsx';
+import { DB_MOCK } from './mock/db.mock.js';
 
 
 const router = createBrowserRouter([
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "home",
-        element: <TaskComponent />,
+        element: <TaskComponent data={DB_MOCK} />,
       },
       {
         path: "edit",
