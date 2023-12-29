@@ -5,13 +5,18 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Tasks from './views/Tasks';
 import Edit from './components/Edit/Edit.jsx';
 import Delete from './components/Delete/Delete.jsx';
+import TaskComponent from './components/TaskComponent/TaskComponent.jsx';
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Tasks />,
     children: [
+      {
+        path: "home",
+        element: <TaskComponent />,
+      },
       {
         path: "edit",
         element: <Edit />,

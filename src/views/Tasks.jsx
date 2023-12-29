@@ -10,7 +10,6 @@ const Tasks = () => {
         <>
             <Header />
             <section className="Tasks">Otimize seu tempo e se organize com o nosso Planejador Diário.</section>
-            <TaskComponent />
             <Outlet />
         </>
     )

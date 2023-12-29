@@ -3,6 +3,7 @@ import edit from '../../assets/edit.svg'
 import del from '../../assets/del.svg'
 import more from '../../assets/more.svg'
 import checked from '../../assets/checked.svg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -27,8 +28,8 @@ const TaskComponent = () => {
                     <label for="myCheckbox"></label>
 
                     <div>
-                        <img src={edit} alt="Editar" />
-                        <img src={del} alt="Deletar" />
+                        <Link to="/edit"><img src={edit} alt="Editar" /></Link>
+                        <Link to="/delete"><img src={del} alt="Deletar" /></Link>
                     </div>
                 </div>
                 <div className="task__container--new">
